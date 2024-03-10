@@ -1,0 +1,326 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.jwienk.stellar",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "brandColor": "#00B0FF",
+  "name": {
+    "en": "Stellar"
+  },
+  "description": {
+    "en": "."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Jeroen Wienk",
+    "email": "jeroen.wienk@athom.nl"
+  },
+  "api": {
+    "get": {
+      "method": "GET",
+      "path": "/*"
+    },
+    "post": {
+      "method": "POST",
+      "path": "/*"
+    },
+    "put": {
+      "method": "PUT",
+      "path": "/*"
+    },
+    "delete": {
+      "method": "DELETE",
+      "path": "/*"
+    }
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Get"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "path",
+            "title": {
+              "en": "Path"
+            },
+            "placeholder": {
+              "en": "/"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "query",
+            "title": {
+              "en": "Query"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "params",
+            "title": {
+              "en": "Params"
+            },
+            "example": {
+              "en": "{}"
+            }
+          }
+        ],
+        "id": "api_get"
+      },
+      {
+        "title": {
+          "en": "A get is received"
+        },
+        "titleFormatted": {
+          "en": "A get on [[path]] is received"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "path",
+            "title": {
+              "en": "Path"
+            },
+            "placeholder": {
+              "en": "/"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "responseToken",
+            "title": {
+              "en": "Response Token"
+            }
+          },
+          {
+            "type": "string",
+            "name": "query",
+            "title": {
+              "en": "Query"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "params",
+            "title": {
+              "en": "Params"
+            },
+            "example": {
+              "en": "{}"
+            }
+          }
+        ],
+        "id": "api_get_response"
+      },
+      {
+        "title": {
+          "en": "Post"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "path",
+            "title": {
+              "en": "Path"
+            },
+            "placeholder": {
+              "en": "/"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "body",
+            "title": {
+              "en": "Body"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "query",
+            "title": {
+              "en": "Query"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "params",
+            "title": {
+              "en": "Params"
+            },
+            "example": {
+              "en": "{}"
+            }
+          }
+        ],
+        "id": "api_post"
+      },
+      {
+        "title": {
+          "en": "A post is received"
+        },
+        "titleFormatted": {
+          "en": "A post on [[path]] is received"
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "path",
+            "title": {
+              "en": "Path"
+            },
+            "placeholder": {
+              "en": "/"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "string",
+            "name": "responseToken",
+            "title": {
+              "en": "Response Token"
+            }
+          },
+          {
+            "type": "string",
+            "name": "body",
+            "title": {
+              "en": "Body"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "query",
+            "title": {
+              "en": "Query"
+            },
+            "example": {
+              "en": "{}"
+            }
+          },
+          {
+            "type": "string",
+            "name": "params",
+            "title": {
+              "en": "Params"
+            },
+            "example": {
+              "en": "{}"
+            }
+          }
+        ],
+        "id": "api_post_response"
+      }
+    ],
+    "actions": [
+      {
+        "title": {
+          "en": "Reject response token with message and status code"
+        },
+        "titleFormatted": {
+          "en": "Reject response token [[droptoken]] with message [[message]] and status code [[statusCode]]"
+        },
+        "droptoken": [
+          "string"
+        ],
+        "args": [
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            }
+          },
+          {
+            "type": "text",
+            "name": "message",
+            "title": {
+              "en": "Message"
+            }
+          },
+          {
+            "type": "number",
+            "name": "statusCode",
+            "title": {
+              "en": "Status Code"
+            },
+            "value": 400
+          }
+        ],
+        "id": "api_response_reject"
+      },
+      {
+        "title": {
+          "en": "Resolve response token"
+        },
+        "titleFormatted": {
+          "en": "Resolve response token [[droptoken]]"
+        },
+        "droptoken": [
+          "string"
+        ],
+        "id": "api_response_resolve"
+      },
+      {
+        "title": {
+          "en": "Resolve response token with JSON"
+        },
+        "titleFormatted": {
+          "en": "Resolve response token [[droptoken]] with [[json]]"
+        },
+        "droptoken": [
+          "string"
+        ],
+        "args": [
+          {
+            "type": "text",
+            "name": "json",
+            "title": {
+              "en": "JSON"
+            },
+            "placeholder": {
+              "en": "{ \"key\": \"value\" }"
+            }
+          }
+        ],
+        "id": "api_response_resolve_json"
+      }
+    ]
+  }
+}

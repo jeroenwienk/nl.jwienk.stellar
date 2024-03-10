@@ -1,0 +1,9 @@
+{
+  "title": {
+    "en": "Resolve response token"
+  },
+  "titleFormatted": {
+    "en": "Resolve response token [[droptoken]]"
+  },
+  "droptoken": ["string"]
+}

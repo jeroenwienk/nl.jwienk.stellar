@@ -1,0 +1,59 @@
+{
+  "title": {
+    "en": "A post is received"
+  },
+  "titleFormatted": {
+    "en": "A post on [[path]] is received"
+  },
+  "args": [
+    {
+      "type": "text",
+      "name": "path",
+      "title": {
+        "en": "Path"
+      },
+      "placeholder": {
+        "en": "/"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "string",
+      "name": "responseToken",
+      "title": {
+        "en": "Response Token"
+      }
+    },
+    {
+      "type": "string",
+      "name": "body",
+      "title": {
+        "en": "Body"
+      },
+      "example": {
+        "en": "{}"
+      }
+    },
+    {
+      "type": "string",
+      "name": "query",
+      "title": {
+        "en": "Query"
+      },
+      "example": {
+        "en": "{}"
+      }
+    },
+    {
+      "type": "string",
+      "name": "params",
+      "title": {
+        "en": "Params"
+      },
+      "example": {
+        "en": "{}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Resolve response token with JSON"
+  },
+  "titleFormatted": {
+    "en": "Resolve response token [[droptoken]] with [[json]]"
+  },
+  "droptoken": ["string"],
+  "args": [
+    {
+      "type": "text",
+      "name": "json",
+      "title": {
+        "en": "JSON"
+      },
+      "placeholder": {
+        "en": "{ \"key\": \"value\" }"
+      }
+    }
+  ]
+}

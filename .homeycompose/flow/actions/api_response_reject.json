@@ -1,0 +1,33 @@
+{
+  "title": {
+    "en": "Reject response token with message and status code"
+  },
+  "titleFormatted": {
+    "en": "Reject response token [[droptoken]] with message [[message]] and status code [[statusCode]]"
+  },
+  "droptoken": ["string"],
+  "args": [
+    {
+      "type": "text",
+      "name": "message",
+      "title": {
+        "en": "Message"
+      }
+    },
+    {
+      "type": "text",
+      "name": "message",
+      "title": {
+        "en": "Message"
+      }
+    },
+    {
+      "type": "number",
+      "name": "statusCode",
+      "title": {
+        "en": "Status Code"
+      },
+      "value": 400
+    }
+  ]
+}

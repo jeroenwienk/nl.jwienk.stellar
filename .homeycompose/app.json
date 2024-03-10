@@ -1,0 +1,43 @@
+{
+  "id": "nl.jwienk.stellar",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "brandColor": "#00B0FF",
+  "name": {
+    "en": "Stellar"
+  },
+  "description": {
+    "en": "."
+  },
+  "category": ["tools"],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Jeroen Wienk",
+    "email": "jeroen.wienk@athom.nl"
+  },
+  "api": {
+    "get": {
+      "method": "GET",
+      "path": "/*"
+    },
+    "post": {
+      "method": "POST",
+      "path": "/*"
+    },
+    "put": {
+      "method": "PUT",
+      "path": "/*"
+    },
+    "delete": {
+      "method": "DELETE",
+      "path": "/*"
+    }
+  }
+}
