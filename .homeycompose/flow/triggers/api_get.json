@@ -1,6 +1,9 @@
 {
   "title": {
-    "en": "Get"
+    "en": "Get path"
+  },
+  "titleFormatted": {
+    "en": "Get [[path]]"
   },
   "args": [
     {

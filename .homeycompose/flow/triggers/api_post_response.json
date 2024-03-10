@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "A post is received"
+    "en": "Post path with response"
   },
   "titleFormatted": {
-    "en": "A post on [[path]] is received"
+    "en": "Post [[path]] with response"
   },
   "args": [
     {
@@ -22,7 +22,7 @@
       "type": "string",
       "name": "responseToken",
       "title": {
-        "en": "Response Token"
+        "en": "Response"
       }
     },
     {

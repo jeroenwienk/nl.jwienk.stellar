@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "A get is received"
+    "en": "Get path with response"
   },
   "titleFormatted": {
-    "en": "A get on [[path]] is received"
+    "en": "Get [[path]] with response"
   },
   "args": [
     {
@@ -22,7 +22,7 @@
       "type": "string",
       "name": "responseToken",
       "title": {
-        "en": "Response Token"
+        "en": "Response"
       }
     },
     {

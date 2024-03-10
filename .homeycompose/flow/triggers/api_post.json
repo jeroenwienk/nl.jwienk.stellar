@@ -1,6 +1,9 @@
 {
   "title": {
-    "en": "Post"
+    "en": "Post path"
+  },
+  "titleFormatted": {
+    "en": "Post [[path]]"
   },
   "args": [
     {

@@ -1,9 +1,9 @@
 {
   "title": {
-    "en": "Reject response token with message and status code"
+    "en": "Reject response with message and status code"
   },
   "titleFormatted": {
-    "en": "Reject response token [[droptoken]] with message [[message]] and status code [[statusCode]]"
+    "en": "Reject response [[droptoken]] with message [[message]] and status code [[statusCode]]"
   },
   "droptoken": ["string"],
   "args": [

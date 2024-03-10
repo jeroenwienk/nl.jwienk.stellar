@@ -49,7 +49,10 @@
     "triggers": [
       {
         "title": {
-          "en": "Get"
+          "en": "Get path"
+        },
+        "titleFormatted": {
+          "en": "Get [[path]]"
         },
         "args": [
           {
@@ -89,10 +92,10 @@
       },
       {
         "title": {
-          "en": "A get is received"
+          "en": "Get path with response"
         },
         "titleFormatted": {
-          "en": "A get on [[path]] is received"
+          "en": "Get [[path]] with response"
         },
         "args": [
           {
@@ -111,7 +114,7 @@
             "type": "string",
             "name": "responseToken",
             "title": {
-              "en": "Response Token"
+              "en": "Response"
             }
           },
           {
@@ -139,7 +142,10 @@
       },
       {
         "title": {
-          "en": "Post"
+          "en": "Post path"
+        },
+        "titleFormatted": {
+          "en": "Post [[path]]"
         },
         "args": [
           {
@@ -189,10 +195,10 @@
       },
       {
         "title": {
-          "en": "A post is received"
+          "en": "Post path with response"
         },
         "titleFormatted": {
-          "en": "A post on [[path]] is received"
+          "en": "Post [[path]] with response"
         },
         "args": [
           {
@@ -211,7 +217,7 @@
             "type": "string",
             "name": "responseToken",
             "title": {
-              "en": "Response Token"
+              "en": "Response"
             }
           },
           {
@@ -251,10 +257,10 @@
     "actions": [
       {
         "title": {
-          "en": "Reject response token with message and status code"
+          "en": "Reject response with message and status code"
         },
         "titleFormatted": {
-          "en": "Reject response token [[droptoken]] with message [[message]] and status code [[statusCode]]"
+          "en": "Reject response [[droptoken]] with message [[message]] and status code [[statusCode]]"
         },
         "droptoken": [
           "string"
@@ -287,10 +293,10 @@
       },
       {
         "title": {
-          "en": "Resolve response token"
+          "en": "Resolve response"
         },
         "titleFormatted": {
-          "en": "Resolve response token [[droptoken]]"
+          "en": "Resolve response [[droptoken]]"
         },
         "droptoken": [
           "string"
@@ -299,10 +305,10 @@
       },
       {
         "title": {
-          "en": "Resolve response token with JSON"
+          "en": "Resolve response with JSON"
         },
         "titleFormatted": {
-          "en": "Resolve response token [[droptoken]] with [[json]]"
+          "en": "Resolve response [[droptoken]] with [[json]]"
         },
         "droptoken": [
           "string"
